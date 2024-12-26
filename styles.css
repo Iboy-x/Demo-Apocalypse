@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #f0f0f0;
+    background-color: #0a0f1f;
+    line-height: 1.6;
+    scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
+}
+
+/* Header Styles */
+.main-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #162447;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+}
+
+.logo {
+    
+    font-size: 1.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e63946;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+/* Full-Screen Nav for Mobile */
+.nav-links.mobile {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #162447;
+}
+
+.nav-links.mobile a {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+/* Section Styles */
+.section, .hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero {
+    background-color: #162447;
+    color: #fff;
+}
+.hero-content h1 {
+    color:#e63946;
+    font-family: 'Pixelify Sans';
+    font-size: 4rem;
+}
+.hero-content h2 {
+    color: white;
+    font-family: 'Roboto Sans';
+}
+.invitation {
+    background-color: #1b263b; /* Dark Blue */
+}
+
+.guilds {
+    background-color: #415a77; /* Light Blue-Grey */
+}
+
+.timeline {
+    background-color: #778da9; /* Slate Grey */
+}
+
+.faq {
+    background-color: #e63946; /* Red Gradient */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-links.mobile {
+        display: flex;
+    }
+}
