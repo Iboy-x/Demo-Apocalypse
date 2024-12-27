@@ -114,8 +114,148 @@ body {
     background-color: #1b263b; /* Dark Blue */
 }
 
-.guilds {
-    background-color: #415a77; /* Light Blue-Grey */
+/* Guild Section */
+.guild-section {
+    text-align: center;
+    background-image: url('images/image1.jpg'); 
+    background-size: cover;
+    background-position: top;
+    padding: 40px 20px;
+    color: #fff;
+}
+
+.guild-section h2 {
+    color: #f3f3f3;
+    font-size: 4rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    margin-bottom: 20px;
+    text-shadow: #e63946;
+}
+
+
+.guild-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Card Styles */
+.card11 {
+    position: relative;
+    width: 100%; /* for responsiveness */
+    max-width: 250px; 
+    aspect-ratio: 4 / 5; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.4s ease, color 0.3s ease;
+}
+
+/* Gradient Effect */
+.card11::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 10px;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), rgba(255, 255, 255, 0.4));
+    z-index: -1;
+    animation: gradientShift 8s ease-in-out infinite;
+    transition: background 0.4s ease-in-out;
+}
+
+/* Glowing Blur Effect */
+.card11::after {
+    content: '';
+    z-index: -2;
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 139, 0.6), rgba(255, 255, 255, 0.2));
+    filter: blur(30px);
+    animation: glowShift 5s ease-in-out infinite;
+}
+
+
+.card11 p {
+    opacity: 0;
+    transition: opacity 0.4s ease, color 0.4s ease;
+}
+
+.card11:hover p {
+    opacity: 1;
+    color: white;
+}
+
+
+.heading11 {
+    font-size: 2rem;
+    font-family: 'Pixelify Sans', sans-serif;
+    text-transform: capitalize;
+    font-weight: 700;
+}
+
+/* Paragraph Text Styles */
+.card11 p:not(.heading11) {
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Hover Effects */
+.card11:hover {
+    transform: scale(1.05); /* Smooth zoom-in effect */
+}
+
+.card11:hover::before {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.9), rgba(255, 255, 255, 0.6));
+}
+
+.card11:hover::after {
+    filter: blur(40px); /* Enhanced blur for hover */
+}
+
+/* Gradient Animation */
+@keyframes gradientShift {
+    0% {
+        background-position: 0% 100%;
+    }
+    50% {
+        background-position: 50% 0%;
+    }
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+/* Glow Animation */
+@keyframes glowShift {
+    0% {
+        background: linear-gradient(to top, rgba(0, 0, 139, 0.6), rgba(255, 255, 255, 0.2));
+    }
+    50% {
+        background: linear-gradient(to top, rgba(0, 0, 180, 0.8), rgba(255, 255, 255, 0.3));
+    }
+    100% {
+        background: linear-gradient(to top, rgba(0, 0, 139, 0.6), rgba(255, 255, 255, 0.2));
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .guild-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card11 {
+        width: 90%; /* Full width for mobile */
+        aspect-ratio: 4 / 5; /* Maintain card ratio */
+    }
 }
 
 .timeline {
