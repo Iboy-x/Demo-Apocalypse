@@ -48,7 +48,7 @@ body {
 #invitation {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url('images/pic1.jpg') no-repeat center center fixed;
+    background: url('images/image1.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the entire screen */
     color: #ffffff;
     display: flex;
