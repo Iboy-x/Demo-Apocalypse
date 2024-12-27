@@ -15,76 +15,7 @@ body {
     scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
 }
 
-/* Header Styles */
-.main-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #162447;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    z-index: 1000;
-}
 
-.logo {
-    
-    font-size: 1.5rem;
-}
-
-.nav-links {
-    display: flex;
-    gap: 1rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-}
-
-.nav-links a:hover {
-    color: #e63946;
-}
-
-.hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25px;
-    height: 20px;
-    cursor: pointer;
-}
-
-.hamburger span {
-    background-color: #fff;
-    height: 3px;
-    width: 100%;
-    border-radius: 2px;
-    transition: all 0.3s ease;
-}
-
-/* Full-Screen Nav for Mobile */
-.nav-links.mobile {
-    display: none;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #162447;
-}
-
-.nav-links.mobile a {
-    font-size: 1.5rem;
-    margin: 1rem 0;
-}
 
 /* Section Styles */
 .section, .hero {
@@ -281,3 +212,151 @@ body {
         display: flex;
     }
 }
+
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+  
+  /* Apply fonts globally */
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  /* Glowing Text Effect */
+  .glowing-text {
+    font-family: 'Pixelify Sans', sans-serif;
+    font-size: 4rem;
+    background: linear-gradient(to right, #ffffff, #ffffff);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Typewriter Effect */
+  .loader {
+    position: relative;
+    overflow: hidden;
+    border-right: 3px solid;
+    width: 0px;
+    animation: typewriter 4s steps(15) forwards, blink 0.75s steps(15) infinite;
+  }
+  
+  .loader-text {
+    font-size: 4rem;
+    font-weight: 700;
+    background: linear-gradient(to right, #ffff, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @keyframes typewriter {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    100% {
+      border-right-color: transparent;
+    }
+  }
+  
+  /* Hero Section Custom Fonts */
+  .hero-content h1 {
+    font-family: 'Pixelify Sans', sans-serif;
+    color: #ffff;
+    font-size: 4rem;
+  }
+  
+  .hero-content h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 3rem;
+  }
+  
+  .font-pixelify {
+    font-family: 'Pixelify Sans', sans-serif;
+  }
+  
+  /* From Uiverse.io by zjssun */ 
+button {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #ffffff80;
+    text-shadow: none;
+    background: transparent;
+    cursor: pointer;
+    box-shadow: transparent;
+    transition: 0.5s ease;
+    user-select: none;
+  }
+  
+  #btn:hover,
+  :focus {
+    color: #5ee7dd;
+
+   
+    text-shadow: 0 0 5px #5fdbc4, 0 0 10px #ffffff, 0 0 20px #ffffff;
+
+  }
+  
+
+/* Hamburger Menu Animation */
+.hamburger span {
+    display: block;
+    height: 4px;
+    width: 30px;
+    background-color: #1abc9c;
+    transition: all 0.3s ease;
+  }
+  
+  /* Overlay styling */
+  .overlay {
+    transform: translateX(100%); /* Initially off-screen */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+  }
+  
+  /* Show the overlay when active */
+  .overlay.active {
+    transform: translateX(0); /* Slide in */
+  }
+  
+  /* Close button styling */
+  #close-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  #close-btn:hover {
+    color: #1abc9c; /* Change color on hover */
+  }
+  
+  /* Overlay menu links hover effect */
+  nav a {
+    transition: transform 0.3s ease;
+  }
+  
+  nav a:hover {
+    transform: scale(1.1);
+  }
+  

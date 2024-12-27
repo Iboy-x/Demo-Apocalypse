@@ -1,38 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apocalypse Hackathon</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apocalypse</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&family=Pixelify+Sans:wght@400..700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <script src="script.js" defer></script>
 </head>
-<body>
-    <!-- Header with Hamburger Menu -->
-    <header class="main-header">
-        <div class="logo">Cedar Codes</div>
-        <nav class="nav-links">
-            <a href="#hero">Home</a>
-            <a href="#invitation">Invitation</a>
-            <a href="#guilds">Guilds</a>
-            <a href="#timeline">Timeline</a>
-            <a href="#faq">FAQs</a>
-        </nav>
-        <div class="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </header>
 
-    <!-- Hero Section - muzaina  -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h2>Cedar Codes Presents</h2>
-            <h1>Apocalypse</h1>
-            <p>The Ultimate Hackathon Experience</p>
-            <button onclick="window.location.href='#projects'">View Projects</button>
+
+<body class="overflow-x-hidden">
+
+
+      <!-- Header Section -->
+      <header class="main-header fixed w-full z-50 bg-black bg-opacity-5 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+          <!-- Logo -->
+          <div class="text-teal-300 text-2xl font-bold font-mono">
+            Cedar Codes
+          </div>
+      <!-- Navigation Links -->
+      <nav id="nav-links" class="hidden md:flex space-x-8 text-white font-pixelify font-semibold">
+        <a href="#hero" class="hover:text-teal-300 transition duration-200">Home</a>
+        <a href="#invitation" class="hover:text-teal-300 transition duration-200">Invitation</a>
+        <a href="#guilds" class="hover:text-teal-300 transition duration-200">Guilds</a>
+        <a href="#timeline" class="hover:text-teal-300 transition duration-200">Timeline</a>
+        <a href="#faq" class="hover:text-teal-300 transition duration-200">FAQs</a>
+      </nav>
+
+
+<!-- Hamburger Menu -->
+<div id="hamburger" class="md:hidden flex flex-col space-y-1 cursor-pointer hamburger">
+  <span class="block w-8 h-1 bg-teal-300"></span>
+  <span class="block w-8 h-1 bg-teal-300"></span>
+  <span class="block w-8 h-1 bg-teal-300"></span>
+</div>
+
+<!-- Overlay Menu -->
+<div id="overlay" class="overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-50 flex justify-center items-center transform translate-x-full transition-transform duration-300">
+  <!-- Close Button -->
+  <button id="close-btn" class="absolute top-4 right-4 text-white text-3xl font-bold">X</button>
+
+  <!-- Navigation Links -->
+  <nav class="flex flex-col space-y-8 text-white font-pixelify text-2xl font-semibold">
+    <a href="#hero" class="hover:text-teal-300 transition duration-200">Home</a>
+    <a href="#invitation" class="hover:text-teal-300 transition duration-200">Invitation</a>
+    <a href="#guilds" class="hover:text-teal-300 transition duration-200">Guilds</a>
+    <a href="#timeline" class="hover:text-teal-300 transition duration-200">Timeline</a>
+    <a href="#faq" class="hover:text-teal-300 transition duration-200">FAQs</a>
+  </nav>
+</div>
+  </header>
+    
+
+ <!-- Hero Start -->
+
+
+      <!-- First Section -->
+      <section class="relative h-screen w-full flex justify-center items-center overflow-hidden">
+        <!-- Dark Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]"></div>
+        <video class="absolute top-0 left-0 w-full h-full object-cover z-[-2]" autoplay muted loop>
+          <source src="images/glitch.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div class="relative z-10 flex flex-col items-center text-center hero-content">
+          <!-- Title Text -->
+          <p class="text-teal-300 text-xl text-shadow mb-4 font-roboto font-bold">
+            Cedar Codes Presents...
+          </p>
+          <!-- Glowing Text -->
+          <div class="loader mb-4">
+            <span class="loader-text glowing-text">APOCALYPSE</span>
+          </div>
+          <!-- Button -->
+          <button id="btn" class="px-6 py-3 text-white transition duration-200 shadow-md focus:ring-4 focus:ring-teal-300 font-pixelify font-semibold underline text-xl">
+            View Projects
+          </button>
         </div>
-    </section>
+        <!-- Fixed image size, no shrinking -->
+        <img class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[900px] h-auto max-w-none max-h-none object-contain" src="/images/top.png" alt="Screen" />
+      </section>
+
+      <!-- Second Section -->
+  <section class="relative h-screen w-full flex justify-center items-center overflow-hidden mt-0">
+    <!-- Dark Overlay -->
+    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]"></div>
+    <video class="absolute top-0 left-0 w-full h-full object-cover z-[-2]" autoplay muted loop>
+      <source src="images/glitch.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Fixed image size, no shrinking -->
+    <img class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[900px] h-auto max-w-none max-h-none object-contain" src="/images/bot.png" alt="Screen" />
+  </section>
+
+ <!-- Hero End -->
 
     <!-- Invitation Letter Section Eeman -->
     <section id="invitation" class="section invitation">
