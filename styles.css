@@ -137,8 +137,9 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    justify-content: center; /* Ensures cards are centered horizontally */
+    align-items: center; /* Ensures cards are aligned vertically if height varies */
 }
-
 /* Card Styles */
 .card11 {
     position: relative;
