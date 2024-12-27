@@ -44,7 +44,111 @@ body {
 .invitation {
     background-color: #1b263b; /* Dark Blue */
 }
+/* invitation section css starts*/
+#invitation {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: url('assets/pic1.jpg') no-repeat center center fixed;
+    background-size: cover; /* Ensures the image covers the entire screen */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+  }
 
+  .container-invitation {
+    background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for contrast */
+    border: 2px solid #ffcb47;
+    border-radius: 20px;
+    padding: 3rem; /* Increased padding */
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    max-width: 700px; /* Increased max-width */
+    width: 90%;
+    backdrop-filter: blur(15px);
+}
+
+
+#invitation h1 {
+    font-family: 'Pixelify Sans', sans-serif; 
+    font-size: 2rem;
+    color: #ffcb47;
+    text-shadow: 0 0 10px #ffcb47, 0 0 20px #ffd700;
+    margin-bottom: 1.5rem;
+}
+
+  
+#invitation h1.glow {
+    animation: glow 2s infinite;
+  }
+  
+#invitation .intro {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #f0f0f0;
+    margin: 1rem 0;
+    font-family: "Roboto", sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+#invitation .highlight {
+    color: #ff6f61;
+    font-weight: bold;
+  }
+  
+#invitation  .call-to-action {
+    font-family: 'Pixelify Sans', sans-serif; 
+    font-size: 1.3rem;
+    color: #42e6a4;
+    margin-top: 1.5rem;
+    text-shadow: 0 0 8px #42e6a4, 0 0 15px #28d17c;
+}
+
+#invitation .intro{
+
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1rem; 
+    color: #ffffff; /* Text color */
+    margin: 1rem 0; /* Margin adjustments */
+    line-height: 1.5; /* Line height for better readability */
+}
+.button {
+    font-family: 'Pixelify Sans', sans-serif; 
+    margin-top: 1.5rem;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease-in-out;
+    display: inline-block;
+}
+  
+#invitation .button:hover {
+    background: linear-gradient(135deg, #42e6a4, #1ed760);
+    color: #ffffff;
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 10px #ffcb47, 0 0 20px #ffd700, 0 0 30px #ffcb47;
+    }
+    50% {
+      text-shadow: 0 0 20px #ffd700, 0 0 30px #ffcb47, 0 0 40px #ffd700;
+    }
+    100% {
+      text-shadow: 0 0 30px #ffcb47, 0 0 40px #ffd700, 0 0 50px #ffcb47;
+    }
+  }
+  
+/* invitation section css ends*/
 /* Guild Section */
 .guild-section {
     text-align: center;
@@ -359,4 +463,19 @@ button {
   nav a:hover {
     transform: scale(1.1);
   }
-  
+
+/*invitation section media queries for responsiveness */
+  @media (max-width: 768px){
+    #invitation h1 {
+        font-size: 1.5rem; 
+    }
+
+    #invitation .intro,
+    #invitation .call-to-action {
+        font-size: 0.9rem; 
+    }
+
+    .container-invitation {
+        padding: 2rem; 
+    }
+}
