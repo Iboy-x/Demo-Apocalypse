@@ -42,14 +42,12 @@ body {
     font-family: 'Roboto Sans';
 }
 .invitation {
-    background-color: #1b263b; /* Dark Blue */
+    background-color: #000000; /* Dark Blue */
 }
 /* invitation section css starts*/
 #invitation {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url('images/glitchy.jpg') no-repeat center center fixed;
-    background-size: cover; /* Ensures the image covers the entire screen */
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -65,11 +63,11 @@ body {
 
   .container-invitation {
     background: rgba(0, 0, 0, 0.6); /* Slightly darker overlay for contrast */
-    border: 2px solid #ffcb47;
+    border: 2px solid #ffffff;
     border-radius: 20px;
     padding: 3rem; /* Increased padding */
     text-align: center;
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.5);
     max-width: 700px; /* Increased max-width */
     width: 90%;
     backdrop-filter: blur(15px);
@@ -106,7 +104,7 @@ body {
 #invitation  .call-to-action {
     font-family: 'Pixelify Sans', sans-serif; 
     font-size: 1.3rem;
-    color: #42e6a4;
+    color: #a3f8d6;
     margin-top: 1.5rem;
     text-shadow: 0 0 8px #42e6a4, 0 0 15px #28d17c;
 }
@@ -123,13 +121,13 @@ body {
     font-family: 'Pixelify Sans', sans-serif; 
     margin-top: 1.5rem;
     padding: 0.8rem 1.8rem;
-    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+    background: linear-gradient(135deg, #000000, #000000);
     color: #ffffff;
     text-decoration: none;
     font-size: 1rem;
     font-weight: bold;
     border-radius: 30px;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 6px 10px rgba(191, 184, 184, 0.3);
     transition: all 0.4s ease-in-out;
     display: inline-block;
 }
