@@ -17,29 +17,6 @@ body {
 
 
 
-/* Section Styles */
-.section, .hero {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 2rem;
-}
-
-.hero {
-    background-color: #162447;
-    color: #fff;
-}
-.hero-content h1 {
-    color:#e63946;
-    font-family: 'Pixelify Sans';
-    font-size: 4rem;
-}
-.hero-content h2 {
-    color: white;
-    font-family: 'Roboto Sans';
 }
 .invitation {
     background-color: #000000; /* Dark Blue */
