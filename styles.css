@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans:wght@400..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 * {
@@ -16,15 +15,14 @@ body {
 }
 
 
-
-}
 .invitation {
     background-color: #000000; /* Dark Blue */
 }
-/* invitation section css starts*/
+/* invitation section css starts- done by EEMAN*/
 #invitation {
     margin: 0;
     font-family: 'Roboto', sans-serif;
+    background: url('images/glitchy.jpg');
     color: #ffffff;
     display: flex;
     justify-content: center;
@@ -128,7 +126,7 @@ body {
     }
   }
   
-/* invitation section css ends*/
+/* invitation section css ends- done by EEMAN*/
 /* Guild Section */
 .guild-section {
     text-align: center;
@@ -449,7 +447,7 @@ button {
     transform: scale(1.1);
   }
 
-/*invitation section media queries for responsiveness */
+/*invitation section media queries for responsiveness- done by EEMAN */
   @media (max-width: 768px){
     #invitation h1 {
         font-size: 1.5rem; 
@@ -464,3 +462,130 @@ button {
         padding: 2rem; 
     }
 }
+
+/*faq section css begins- done by EEMAN*/
+#faq {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  background-image: url(images/glitchy.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  padding: 50px 0;
+}
+
+#faq .faq-container {
+  
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: linear-gradient(90deg, rgba(50, 0, 100, 0.7), rgba(200, 50, 150, 0.7));
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  backdrop-filter: blur(8px); /* Adds a frosted glass effect */
+}
+
+#faq .faq-heading {
+  font-family: 'Pixelify Sans', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+#faq .faq-question {
+  font-family: 'Pixelify Sans', sans-serif;
+  background: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  padding: 10px 0;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #fff;
+  transition: background-color 0.3s ease;
+}
+
+#faq .faq-question:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+#faq .faq-question span {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#faq .faq-answer {
+  display: none;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #eee;
+  border-top: 1px solid #fff;
+}
+
+#faq .faq-question.active + .faq-answer {
+  display: block;
+}
+/*faq section css ends- done by EEMAN*/
+
+/* Responsive Media Queries for faq section- done by EEMAN*/
+@media (max-width: 1024px) {
+  #faq {
+    padding: 40px 0; 
+  }
+
+  #faq .faq-container {
+    max-width: 90%; 
+    margin: 30px auto; 
+    padding: 15px;
+  }
+
+  #faq .faq-heading {
+    font-size: 20px; 
+  }
+
+  #faq .faq-question {
+    font-size: 16px; 
+    padding: 8px 0; 
+  }
+
+  #faq .faq-answer {
+    font-size: 14px; 
+  }
+}
+
+@media (max-width: 768px) {
+  #faq {
+    padding: 30px 0; 
+  }
+
+  #faq .faq-container {
+    max-width: 95%; 
+    margin: 20px auto; 
+    padding: 10px;
+  }
+
+  #faq .faq-heading {
+    font-size: 18px; 
+  }
+
+  #faq .faq-question {
+    font-size: 14px; 
+    padding: 6px 0;
+  }
+
+  #faq .faq-answer {
+    font-size: 12px; 
+  }
+}
+/*faq section media queries end- done by EEMAN*/
