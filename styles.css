@@ -48,7 +48,7 @@ body {
 #invitation {
     margin: 0;
     font-family: 'Roboto', sans-serif;
-    background: url('images/image1.jpg') no-repeat center center fixed;
+    background: url('images/glitchy.jpg') no-repeat center center fixed;
     background-size: cover; /* Ensures the image covers the entire screen */
     color: #ffffff;
     display: flex;
@@ -56,6 +56,11 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    position: relative;
+    padding: 100px 20px;
+    min-height: 100vh;
+    background-position: center;
+    background-attachment: fixed;
   }
 
   .container-invitation {
@@ -152,11 +157,16 @@ body {
 /* Guild Section */
 .guild-section {
     text-align: center;
-    background-image: url('images/image1.jpg'); 
+    background: url('images/glitchy.jpg');
     background-size: cover;
     background-position: top;
     padding: 40px 20px;
     color: #fff;
+    overflow: hidden;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 .guild-section h2 {
