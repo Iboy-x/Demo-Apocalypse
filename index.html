@@ -41,7 +41,7 @@
 <!-- Overlay Menu -->
 <div id="overlay" class="overlay fixed top-0 left-0 w-full h-full bg-black bg-opacity-80 z-50 flex justify-center items-center transform translate-x-full transition-transform duration-300">
   <!-- Close Button -->
-  <button id="close-btn" class="absolute top-4 right-4 text-white text-3xl font-bold">X</button>
+  <button id="close-btn" class="absolute top-4 right-4 text-white text-3xl font-bold">+</button>
 
   <!-- Navigation Links -->
   <nav class="flex flex-col space-y-8 text-white font-pixelify text-2xl font-semibold">
@@ -55,48 +55,67 @@
   </header>
     
 
- <!-- Hero Start -->
+<!-- Hero Start -->
+
+<!-- First Section -->
+<section class="relative h-screen w-full flex justify-center items-center overflow-hidden">
+  <!-- Dark Overlay -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]"></div>
+  <video class="absolute top-0 left-0 w-full h-full object-cover z-[-2]" autoplay muted loop>
+    <source src="images/glitch.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  
+  <div class="relative z-[2] flex flex-col items-center text-center hero-content lg:top-[5%] md:top-[5%] sm:top-[0]">
+    <!-- Title Text -->
+    <p class="text-teal-300 text-xl text-shadow mb-8 font-mono font-bold">
+      Cedar Codes Presents...
+    </p>
+    <!-- Glowing Text -->
+    <div class="loader mb-4">
+      <span class="loader-text lg:text-7xl md:text-7xl sm:text-7xl glowing-text">APOCALYPSE</span>
+    </div>
+    <!-- Button -->
+    <button id="btn" class="px-4 py-3 text-white transition duration-200 shadow-md focus:ring-4 focus:ring-teal-300 font-pixelify font-semibold underline text-xl">
+      Register Now!
+    </button>
+  </div>
+  <!-- Fixed image size, adjusted for alignment -->
+  <img
+    class="absolute bottom-0 left-[51%] transform -translate-x-1/2 w-[900px] h-auto max-w-none max-h-none object-contain z-0"
+    src="/images/top.png"
+    alt="Screen"
+  />
+  <!-- Additional Buttons -->
+  <div class="absolute bottom-10 w-full flex justify-between px-8">
+    <button class="px-4 py-2 text-xl text-teal-100 transition duration-200 font-pixelify font-semibold shadow-md hover:ring-4 hover:ring-teal-300 underline hover:glowing-text">
+      Learn More
+    </button>
+    <button class="px-4 py-2 text-xl text-teal-100 transition duration-200 font-pixelify font-semibold shadow-md hover:ring-4 hover:ring-teal-300 underline hover:glowing-text">
+      View Projects
+    </button>
+  </div>
+</section>
+
+<!-- Second Section -->
+<section class="relative h-screen w-full flex justify-center items-center overflow-hidden mt-0">
+  <!-- Dark Overlay -->
+  <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]"></div>
+  <video class="absolute top-0 left-0 w-full h-full object-cover z-[-2]" autoplay muted loop>
+    <source src="images/glitch.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <!-- Fixed image size, adjusted for alignment -->
+  <img
+    class="absolute top-0 left-[51%] transform -translate-x-1/2 w-[900px] h-auto max-w-none max-h-none object-contain"
+    src="/images/bot.png"
+    alt="Screen"
+  />
+</section>
+
+<!-- Hero End -->
 
 
-      <!-- First Section -->
-      <section class="relative h-screen w-full flex justify-center items-center overflow-hidden">
-        <!-- Dark Overlay -->
-        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]"></div>
-        <video class="absolute top-0 left-0 w-full h-full object-cover z-[-2]" autoplay muted loop>
-          <source src="images/glitch.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        <div class="relative z-10 flex flex-col items-center text-center hero-content">
-          <!-- Title Text -->
-          <p class="text-teal-300 text-xl text-shadow mb-8 font-mono font-bold">
-            Cedar Codes Presents...
-          </p>
-          <!-- Glowing Text -->
-          <div class="loader mb-4">
-            <span class="loader-text lg:text-8xl md:text-8xl sm:text-6xl glowing-text">APOCALYPSE</span>
-          </div>
-          <!-- Button -->
-          <button id="btn" class="px-4 py-3 text-white transition duration-200 shadow-md focus:ring-4 focus:ring-teal-300 font-pixelify font-semibold underline text-xl">
-            View Projects
-          </button>
-        </div>
-        <!-- Fixed image size, no shrinking -->
-        <img class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[900px] h-auto max-w-none max-h-none object-contain" src="/images/top.png" alt="Screen" />
-      </section>
-
-      <!-- Second Section -->
-  <section class="relative h-screen w-full flex justify-center items-center overflow-hidden mt-0">
-    <!-- Dark Overlay -->
-    <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]"></div>
-    <video class="absolute top-0 left-0 w-full h-full object-cover z-[-2]" autoplay muted loop>
-      <source src="images/glitch.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-    <!-- Fixed image size, no shrinking -->
-    <img class="absolute top-0 left-1/2 transform -translate-x-1/2 w-[900px] h-auto max-w-none max-h-none object-contain" src="/images/bot.png" alt="Screen" />
-  </section>
-
- <!-- Hero End -->
 
     <!-- Invitation Letter Section Eeman -->
     <section id="invitation" class="section invitation">
