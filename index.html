@@ -57,7 +57,7 @@
 <!-- Hero Start -->
 
 <!-- First Section -->
-<section class="relative h-screen w-full flex justify-center items-center overflow-hidden sm:h-[90vh]">
+<section class="relative h-screen w-full flex justify-center items-center overflow-hidden sm:h-[80vh]">
   <!-- Dark Overlay -->
   <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-[-1]"></div>
   <video class="absolute top-0 left-0 w-full h-full object-cover z-[-2]" autoplay muted loop>
@@ -65,29 +65,19 @@
     Your browser does not support the video tag.
   </video>
   
-  <div class="relative z-[2] flex flex-col items-center text-center hero-content lg:top-[5%] md:top-[5%] sm:top-[0] sm:mt-16 sm:mb-4 gap-4 sm:gap-2">
-    <!-- Title Text -->
-    <p class="text-teal-300 text-xl text-shadow mb-4 font-mono font-bold sm:mb-2">
+  <div class="relative z-[2] flex flex-col items-center text-center hero-content lg:top-[5%] md:top-[5%] sm:top-[0] sm:mb-4">
+    <!-- Title Text (Hidden on small screens) -->
+    <p class="text-teal-300 text-xl text-shadow mb-8 font-mono font-bold sm:hidden">
       Cedar Codes Presents...
     </p>
-    <!-- Glowing Text -->
-    <div class="loader mb-4 sm:mb-2">
+    <!-- Glowing Text (Hidden on small screens) -->
+    <div class="loader mb-4 sm:hidden">
       <span class="loader-text lg:text-7xl md:text-7xl sm:text-5xl glowing-text">APOCALYPSE</span>
     </div>
     <!-- Button -->
     <button id="btn" class="px-4 py-3 text-white transition duration-200 shadow-md focus:ring-4 focus:ring-teal-300 font-pixelify font-semibold underline text-xl">
       Register Now!
     </button>
-    
-    <!-- Additional Button for Mobile -->
-    <div class="sm:block hidden mt-4">
-      <button class="px-4 py-2 text-xl text-teal-100 transition duration-200 font-pixelify font-semibold shadow-md hover:ring-4 hover:ring-teal-300 underline hover:glowing-text">
-        Learn More
-      </button>
-      <button class="px-4 py-2 text-xl text-teal-100 transition duration-200 font-pixelify font-semibold shadow-md hover:ring-4 hover:ring-teal-300 underline hover:glowing-text">
-        View Projects
-      </button>
-    </div>
   </div>
 
   <!-- Fixed image size, adjusted for alignment -->
@@ -96,9 +86,20 @@
     src="images/top.png"
     alt="Screen"
   />
-
-  <!-- Hidden additional buttons on phone sizes -->
-  <div class="absolute bottom-10 w-full flex justify-between px-8 gap-6 lg:gap-12 md:gap-10 sm:hidden">
+  
+  <!-- Additional Buttons with new Text on Phone Screens -->
+  <div class="absolute bottom-10 w-full flex flex-col items-center px-8 gap-4 lg:gap-12 md:gap-10 sm:gap-2 sm:items-center">
+    <!-- New Text (Only shown on small screens) -->
+    <p class="text-teal-300 text-xl text-shadow mb-4 font-mono font-bold sm:block hidden">
+      Cedar Codes Presents...
+    </p>
+    <div class="loader mb-2 sm:block hidden">
+      <span class="loader-text lg:text-7xl md:text-7xl sm:text-5xl glowing-text">APOCALYPSE</span>
+    </div>
+    <!-- Buttons -->
+    <button id="btn" class="px-4 py-3 text-white transition duration-200 shadow-md focus:ring-4 focus:ring-teal-300 font-pixelify font-semibold underline text-xl sm:mb-2">
+      Register Now!
+    </button>
     <button class="px-4 py-2 text-xl text-teal-100 transition duration-200 font-pixelify font-semibold shadow-md hover:ring-4 hover:ring-teal-300 underline hover:glowing-text">
       Learn More
     </button>
@@ -107,6 +108,7 @@
     </button>
   </div>
 </section>
+
 
 
 
